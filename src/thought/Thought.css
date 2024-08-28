@@ -1,0 +1,68 @@
+/* MessageSection.css */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2b2b2b;
+}
+
+.message-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .message-wrapper {
+    flex-direction: column;
+  }
+}
+
+.card {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  width: 55%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+
+.message-title {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #1c1c1c;
+}
+
+.message-position {
+  font-size: 1.2em;
+  color: #757575;
+  margin-bottom: 20px;
+}
+
+.message-text {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #4a4a4a;
+  text-align: justify;
+}
